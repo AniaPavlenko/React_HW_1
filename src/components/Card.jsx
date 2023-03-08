@@ -1,8 +1,8 @@
 import React from "react";
 
-const Card = ({ user }) => {
+const Card = ({ user, handleShowModal }) => {
   return (
-    <div className="card">
+    <div className="card" onClick={handleShowModal}>
       <img src={user.picture} alt="user" />
       <p className="user-name">{user.name}</p>
       <p>Age: {user.age} y.o</p>
